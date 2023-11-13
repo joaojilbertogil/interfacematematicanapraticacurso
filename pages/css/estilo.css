@@ -1,0 +1,54 @@
+/* Estilização do corpo da página */
+body {
+    background-color: #111; /* Cinza escuro quase preto */
+    color: white;
+}
+
+/* Estilização do formulário */
+.card {
+    background-color: #03e629; /* Cinza claro */
+    border: none;
+}
+
+.card-body {
+    padding: 20px;
+}
+
+/* Estilização dos campos do formulário */
+.form-control {
+    background-color: #d8d8d8; /* Cinza mais claro */
+    color: #111; /* Texto mais escuro */
+    border: 1px solid #111; /* Borda mais escura */
+}
+
+/* Estilização do botão Enviar */
+.btn-success {
+    background-color: rgb(8, 73, 2); /* Cinza escuro quase preto */
+    color: white;
+    border: none;
+    transition: background-color 0.3s; /* Transição suave de cor */
+}
+
+.btn-success:hover {
+    background-color: #00ffa2; /* Verde vibrante ao passar o mouse */
+}
+
+/* Estilização do botão Voltar */
+.btn-info {
+    margin-top: 20px;
+    background-color: rgb(9, 192, 238); /* Cinza escuro quase preto */
+    color: white;
+    border: none;
+    transition: background-color 0.3s; /* Transição suave de cor */
+}
+
+.btn-info:hover {
+    background-color: #0d2844; /* Azul vibrante ao passar o mouse */
+}
+
+/* Estilização da mensagem de erro */
+.alert-danger {
+    background-color: red;
+    color: white;
+    border: none;
+}

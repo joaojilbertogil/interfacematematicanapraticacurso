@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <link rel="icon" type="image/png" href="images/logo.png">
+    <title>Curso - Matematica Na Prática</title>
+
+    <!-- Google Fonts - Robot-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap CSS-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+    <!-- Bootstrap Icons-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+
+    <!-- CSS do projeto -->
+    <link rel="stylesheet" href="css1/main.css">
+</head>
+
+<header>
+    <!-- Definição da barra de navegação -->
+    <nav class="navbar navbar-expand-lg fixed-top bg-stilo-nav">
+        <section class="container py-3">
+            <a href="#" class="navbar-brand">
+                <img class="img-fluid" src="images/logo.png" alt="Logo">
+                <span>Matematica Na Prática</span>
+            </a>
+            <!-- Criação do botão para representar o menu hamburguer -->
+            <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbar-items"
+                aria-controls="navbar-items" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="bi bi-list"></i>
+            </button>
+
+            <!-- Definição dos links do menu -->
+            <section class="collapse navbar-collapse" id="navbar-items">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item"><a class="nav-link" href="#slider-container">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#pacote-bronze">Cursos</a></li>
+                     <li class="nav-item"><a class="nav-link" href="#featured-container">Projetos</a></li>
+                     <li class="nav-item"><a class="nav-link" href="#footer">Contato</a></li>
+
+                </ul>
+            </section>
+        </section>
+    </nav>
+</header>
+
+<body>
+    <!-- Definição do Slider -->
+    <section class="container" id="slider-container">
+        <section class="carousel slide" id="slider" data-bs-interval="1000" data-bs-ride="carousel">
+            <section class="carousel-indicators">
+
+                <!-- Criação dos botões que representam as imagens-->
+                <button type="button" class="active" data-bs-target="#slider" data-bs-slide-to="0" aria-current="true"
+                    aria-label="Slide 1"></button>
+
+                <button type="button" data-bs-target="#slider" data-bs-slide-to="1" aria-label="Slide 2"></button>
+
+                <button type="button" data-bs-target="#slider" data-bs-slide-to="2" aria-label="Slide 3"></button>
+
+                <button type="button" data-bs-target="#slider" data-bs-slide-to="3" aria-label="Slide 4"></button>
+            </section>
+
+            <!-- Definição do conteúdo do carrousel -->
+            <section class="carousel-inner">
+                <section class="carousel-item active">
+                    <img src="images/bronze.png" alt="PacoteBronze" class="d-block w-100">
+                    <section class="carousel-caption">
+                        <h5>Pacote Bronze</h5>
+                        <a href="#pacote-bronze" class="btn btn-dark">Conheça</a>
+                    </section>
+                </section>
+
+                <section class="carousel-item">
+                    <img src="images/prata.png" alt="PacotePrata" class="d-block w-100">
+                    <section class="carousel-caption">
+                        <h5>Pacote Prata</h5>
+                        <a href="#pacote-bronze" class="btn btn-dark">Conheça</a>
+                    </section>
+                </section>
+
+                <section class="carousel-item">
+                    <img src="images/ouro.png" alt="PacoteOuro" class="d-block w-100">
+                    <section class="carousel-caption">
+                        <h5>Pacote Ouro</h5>
+                        <a href="#pacote-bronze" class="btn btn-dark">Conheça</a>
+                    </section>
+                </section>
+
+                <section class="carousel-item">
+                    <img src="images/Diamante.png" alt="PacoteDiamante" class="d-block w-100">
+                    <section class="carousel-caption">
+                        <h5>Pacote Diamante</h5>
+                        <a href="#pacote-bronze" class="btn btn-dark">Conheça</a>
+                    </section>
+                </section>
+            </section>
+
+            <button type="button" class="carousel-control-prev" data-bs-target="#slider" data-bs-slide="prev">
+                <i class="bi bi-arrow-counterclockwise"></i>
+                <span class="visually-hidden">Previous</span>
+            </button>
+
+            <button type="button" class="carousel-control-next" data-bs-target="#slider" data-bs-slide="next">
+                <i class="bi bi-arrow-clockwise"></i>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </section>
+
+        <!-- Criação dos cards / banners-->
+        <section class="col-12 col-md-10 offset-1" id="mini-banners">
+            <section class="row">
+
+                <!-- Primeiro card -->
+                <section class="col-12 col-md-3" id="pacote-bronze">
+                    <section class="card text-center">
+                        <i class="bi bi-backpack-fill"></i>
+                        <section class="card-body">
+                            <h5 class="card-title primary-color">Pacote Bronze</h5>
+                            <p class="card-text secondary-color">Aqui Você Vai Aprende Matematica Básica contas de (+, -, x, :)</p>
+                            <a href="/pages/bronze.html" class="btn btn-dark">Conhecer</a>
+                            <a href="/pages/matricular.html" class="btn btn-success">Matricular</a>
+                            <a href="/pages/contato.html" class="btn btn-info">Contato</a>
+                        </section>
+                    </section>
+                </section>
+
+                <!-- Segundo card -->
+                <section class="col-12 col-md-3" id="pacote-prata">
+                    <section class="card text-center">
+                        <i class="bi bi-backpack2-fill"></i>
+                        <section class="card-body">
+                            <h5 class="card-title primary-color">Pacote Prata</h5>
+                            <p class="card-text secondary-color">Aqui Você Vai aprender sobre Angulos, Horas, Dinheiro etc</p>
+                            <a href="/pages/prata.html" class="btn btn-dark">Conhecer</a>
+                            <a href="/pages/matricular.html" class="btn btn-success">Matricular</a>
+                            <a href="/pages/contato.html" class="btn btn-info">Contato</a>
+                        </section>
+                    </section>
+                </section>
+
+                <!-- Terceiro card -->
+                <section class="col-12 col-md-3" id="pacote-ouro">
+                    <section class="card text-center">
+                        <i class="bi bi-backpack3-fill"></i>
+                        <section class="card-body">
+                            <h5 class="card-title primary-color">Pacote Ouro</h5>
+                            <p class="card-text secondary-color">Aqui Você vai aprender Equações, Funções, Regras de Três Etc</p>
+                            <a href="/pages/ouro.html" class="btn btn-dark" >Conhecer</a>
+                            <a href="/pages/matricular.html" class="btn btn-success">Matricular</a>
+                            <a href="/pages/contato.html" class="btn btn-info">Contato</a>
+                        </section>
+                    </section>
+                </section>
+
+                <!-- Quarto card -->
+                <section class="col-12 col-md-3" id="pacote-diamante">
+                    <section class="card text-center">
+                        <i class="bi bi-backpack4-fill"></i>
+                        <section class="card-body">
+                            <h5 class="card-title primary-color">Pacote Diamante</h5>
+                            <p class="card-text secondary-color">Aqui Você Vai Aprender, Geometria, Triconometria, E Calculos Avençados </p>
+                            <a href="/pages/diamante.html" class="btn btn-dark" id="botao-assinar">Conhecer</a>
+                            <a href="/pages/matricular.html" class="btn btn-success">Matricular</a>
+                            <a href="/pages/contato.html" class="btn btn-info">Contato</a>
+                        </section>
+                    </section>
+                </section>
+
+
+
+                <!-- Final dos cards -->
+            </section>
+        </section>
+    </section>
+
+    <!-- Destaques -->
+    <!-- Container dos desatques -->
+    <section class="container" id="featured-container">
+        <section class="col-12">
+            <h2 class="title primary-color">Novos Cursos Logo Lançados</h2>
+            <p class="subtitle secondary-color">Em Breve Teremos Esses Cursos Maravilhosos Disponiveis</p>
+        </section>
+
+        <!-- Início das imagens-->
+        <section class="col-12" id="featured-images">
+            <section class="row g-4">
+
+                <section class="col-12 col-md-4">
+                    <img src="images/port.png" alt="" class="img-fluid">
+                    <section class="banner-content">
+                        <p>Português</p>
+                        <h3>Prof Antonieta</h3>
+                    </section>
+                </section>
+
+                <section class="col-12 col-md-4">
+                    <img src="images/hist.png" alt="" class="img-fluid">
+                    <section class="banner-content">
+                        <p>Historia</p>
+                        <h3>Prof Claudineia</h3>
+                    </section>
+                </section>
+
+                <section class="col-12 col-md-4">
+                    <img src="images/geo.png" alt="" class="img-fluid">
+                    <section class="banner-content">
+                        <p>Geografia</p>
+                        <h3>Prof Helena</h3>
+                    </section>
+                </section>
+
+                <section class="col-12 col-md-4">
+                    <img src="images/fis.png" alt="" class="img-fluid">
+                    <section class="banner-content">
+                        <p>Fisica</p>
+                        <h3>Prof Juss</h3>
+                    </section>
+                </section>
+
+                <section class="col-12 col-md-4">
+                    <img src="images/qui.png" alt="" class="img-fluid">
+                    <section class="banner-content">
+                        <p>Quimica</p>
+                        <h3>Prof Zuleica</h3>
+                    </section>
+                </section>
+
+                <section class="col-12 col-md-4">
+                    <img src="images/filo.png" alt="" class="img-fluid">
+                    <section class="banner-content">
+                        <p>Filosofia</p>
+                        <h3>Prof Sofia</h3>
+                    </section>
+                </section>
+
+
+            </section>
+        </section>
+    </section>
+    <!-- Fim do container destaques -->
+
+
+    <!-- Informações -->
+    <section class="container" id="info-container">
+        <section class="col-12">
+            <h2 class="title primary-color">Seja O Primeiro A Saber Quando Eles Lançarem</h2>
+          
+        </section>
+
+        <section class="col-12 col-md-4">
+            <p>Acesse nossas redes socias para ficar sabendo quando lançarmos o curso.</p>
+            <a href="https://instagram.com/matematicanaratica.curso?igshid=OGQ4aHE4eXBrZ3Nk" class="btn btn-info" target="_blank">Seguir Agora</a>
+        </section>
+
+        
+      
+
+    </section>
+
+    <!-- Fim do container Informações -->
+    </section>
+
+
+    <!-- FOOTER -->
+
+    
+
+    <footer class="container-fluid bg-dark-color" id="footer">
+        <section class="container">
+            <section class="row">
+                <!-- FOOTER TOP -->
+                <section class="col-12" id="footer-top">
+                    <section class="row justify-content-between">
+                        <section class="col-4">
+                            <h2>
+                                Matematica Na Prática
+                            </h2>
+                        </section>
+
+                        <section class="col-12 col-md-4">
+                            <p>Qualquer Duvida Entre Em Contato 
+                                No nosso E-mail cursomatematicanapratica@gmail.com
+                            </p>
+                            
+                            
+                                  
+                        </section>
+
+                        <section class="col-4" id="social-icons">
+                            <a href="https://instagram.com/matematicanaratica.curso?igshid=OGQ4aHE4eXBrZ3Nk" target="_blank">
+                            <i class="bi bi-instagram"></i>
+                        </a>
+                            <a href="https://www.youtube.com/channel/UCzoKwgc-2E5wnLDUG8HL-oA" target="_blank">
+                                <i class="bi bi-youtube"></i>
+                            </a>
+                            
+                        </section>
+                    </section>
+                </section>
+
+                <!-- Bootstrap JS-->
+                <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+                    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+                    crossorigin="anonymous" defer></script>
+
+                    <script src="js1/main.js"></script>
+                    <script src="js1/script.js"></script>
+</body>
+
+</html>

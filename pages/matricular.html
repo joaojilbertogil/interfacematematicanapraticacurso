@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Setor de Matrículas</title>
+    <!-- Adicione o Bootstrap (CSS e JS) -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <!-- Adicione seu próprio script JavaScript -->
+    <script src="../js1/script.js"></script>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 20px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        th, td {
+            padding: 12px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+
+        th {
+            background-color: #4caf50; /* Cor de fundo verde para cabeçalho */
+            color: white;
+        }
+
+        .edit-btn, .delete-btn {
+            display: inline-block;
+            padding: 8px;
+            cursor: pointer;
+            border: none;
+            border-radius: 4px;
+            margin-right: 5px;
+            color: #fff;
+            text-align: center;
+            text-decoration: none;
+        }
+
+        .edit-btn {
+            background-color: #4caf50; /* Cor de fundo verde para botão de editar */
+        }
+
+        .delete-btn {
+            background-color: #f44336; /* Cor de fundo vermelho para botão de excluir */
+        }
+        
+        .botao {
+            background-color: #4caf50; /* Tom de verde */
+            color: #ffffff; /* Letras em branco */
+            padding: 10px 20px;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+            font-size: 14px;
+            transition: background-color 0.3s ease;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <form id="matriculaForm">
+            <div class="form-floating mb-3">
+                <input type="name" class="form-control" id="nomeAluno" placeholder="Nome Completo do Aluno" disabled>
+                <label for="floatingInputDisabled">Nome Do Aluno</label>
+            </div>
+            <div class="form-floating mb-3">
+                <textarea class="form-control" placeholder="Idade do Aluno" id="idadeAluno" disabled></textarea>
+                <label for="floatingTextareaDisabled">Idade </label>
+            </div>
+            <div class="form-floating mb-3">
+                <textarea class="form-control" placeholder="Cidade Do Aluno" id="cidadeAluno" disabled></textarea>
+                <label for="floatingTextareaDisabled">Cidade </label>
+            </div>
+            <div class="form-floating mb-3">
+                <textarea class="form-control" placeholder="Deixe Aqui uma Observação do Aluno (Alergia, Medo, Trauma, Distúrbio, ETC)" id="observacaoAluno" style="height: 100px" disabled></textarea>
+                <label for="floatingTextarea2Disabled">Observação</label>
+            </div>
+            <div class="form-floating">
+                <select class="form-select" id="pacoteAluno" aria-label="Pacote do Aluno" disabled>
+                    
+                    <option value="Bronze">Bronze</option>
+                    <option value="Prata">Prata</option>
+                    <option value="Ouro">Ouro</option>
+                    <option value="Diamante">Diamante</option>
+                </select>
+                <button type="button" onclick="salvar();" class="botao">Matricular</button>
+                
+            </div>
+        </form>
+        
+        <h1>Nossos Alunos</h1>
+    <table id="tabelaAlunos">
+        <thead>
+            <tr>
+                <th>Nome</th>
+                <th>Idade</th>
+                <th>Cidade</th>
+                <th>Observação</th>
+                <th>Pacote</th>
+                <th>Ações</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Aqui os dados dos alunos serão exibidos dinamicamente -->
+        </tbody>
+    </table>
+
+    <button class="botao"><a href="../index.html">Voltar</a></button>
+    <script>
+        window.onload = function() {
+            // Habilita todos os elementos do formulário
+            var inputs = document.querySelectorAll('input, textarea, select, button');
+            inputs.forEach(function(input) {
+                input.removeAttribute('disabled');
+            });
+        };
+    </script>
+
+</body>
+</html>
